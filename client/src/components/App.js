@@ -7,8 +7,6 @@ import SignIn from './auth/SignIn';
 import CheckIn from './check-in/CheckIn';
 import Routes from '../lib/routes';
 
-import './App.scss';
-
 const App = () => (
   <div className='app-wrapper'>
     <HashRouter>

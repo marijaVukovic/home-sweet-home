@@ -3,8 +3,6 @@ import { Card, Modal } from 'semantic-ui-react';
 
 import CheckInForm from './CheckInForm';
 
-import './CheckIn.scss';
-
 class CheckIn extends PureComponent {
   state = {
     isSuccessModalVisible: false,

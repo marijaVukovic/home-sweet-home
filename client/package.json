@@ -5,16 +5,16 @@
   "description": "Home Sweet Home backend app",
   "author": "Marija Vukovic <marijavukovic.tmf@gmail.com>",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "watch-css": "npm run build-css && node-sass-chokidar src/index.scss -o src/ --watch",
+    "build-css": "node-sass-chokidar src/index.scss -o src/",
+    "start": "npm run watch-css & react-scripts start",
+    "build": "npm run build-css && react-scripts build",
     "serve": "node -r dotenv/config ./scripts/serve.js",
     "build-and-serve": "npm run build && npm run serve",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint \"**/*.js\"",
-    "lint-fix": "eslint --fix \"**/*.js\"",
-    "build-css": "node-sass-chokidar src/index.scss -o src/index.css",
-    "watch-css": "npm run build-css && node-sass-chokidar src/index.scss -o src/index.css --watch"
+    "lint-fix": "eslint --fix \"**/*.js\""
   },
   "dependencies": {
     "axios": "^0.18.0",

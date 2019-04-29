@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 
 import { specs } from '../../lib/constants';
 import { guestActions, guestSelectors } from '../../store';
-import './CheckInForm.scss';
 
 const initialFormState = {
   firstName: '',

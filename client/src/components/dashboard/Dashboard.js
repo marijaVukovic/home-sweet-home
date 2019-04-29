@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 import moment from 'moment';
 
 import { guestActions, guestSelectors } from '../../store';
-import './Dashboard.scss';
 
 class Dashboard extends Component {
   propTypes = {
