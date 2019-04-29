@@ -6,7 +6,6 @@ import PropTypes from 'prop-types';
 
 import { authActions, authSelectors } from '../../store';
 import Routes from '../../lib/routes';
-import './SignIn.scss';
 
 class SignIn extends PureComponent {
   propTypes = {

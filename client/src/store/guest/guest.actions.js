@@ -22,7 +22,7 @@ export const checkInGuest = guest => (dispatch) => {
 
 export const checkOutGuest = id => (dispatch) => {
   dispatch(checkOutGuestPending(id));
-  axios.delete(`${env.API_URL}/guests2/${id}`)
+  axios.delete(`${env.API_URL}/guests/${id}`)
     .then(() => dispatch(checkOutGuestSuccess(id)))
     .catch(error => dispatch(checkOutGuestFailure(error.toString(), id)));
 };

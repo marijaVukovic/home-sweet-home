@@ -4,9 +4,4 @@ body {
   margin: 0;
   padding: 0;
   background-color: $background-color;
-  overflow: hidden;
-
-  @media only screen and (max-width: 992px) {
-    overflow: visible;
-  }
 }
