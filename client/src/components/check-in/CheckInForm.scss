@@ -1,0 +1,31 @@
+@import '../../assets/scss/index.scss';
+
+.check-in-form {
+  margin: 20px auto;
+  width: 80%;
+
+  .field {
+    margin-bottom: 20px !important;
+  }
+
+  .check-in-btn-wrapper {
+    text-align: center;
+  }
+
+  .primary-submit-btn {
+    background-color: $primary-color;
+    color: white;
+  }
+
+  .error-status {
+    color: $danger-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    .field {
+      min-width: 100%;
+    }
+  }
+}
+
+

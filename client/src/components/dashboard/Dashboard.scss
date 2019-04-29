@@ -1,0 +1,16 @@
+@import '../../assets/scss/index.scss';
+
+.dashboard-container {
+  width: 80%;
+  margin: 5% auto;
+
+  .check-out-btn {
+    background-color: $danger-color;
+    color: white;
+  }
+
+  .error-status { 
+    color: $danger-color;
+  }
+}
+

@@ -1,0 +1,17 @@
+@import '../../assets/scss/index.scss';
+
+.card.sign-in-container {
+  margin: 40px auto !important;
+  padding: 40px;
+  width: 40%;
+
+  .primary-submit-btn {
+    background-color: $primary-color;
+    color: white;
+  }
+
+  .error-status {
+    color: $danger-color;
+  }
+}
+

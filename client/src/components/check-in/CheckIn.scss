@@ -1,0 +1,70 @@
+@import '../../assets/scss/index.scss';
+
+#check-in-wrapper {
+  h1, h2, h3 {
+    text-align: center;
+    font-style: italic;
+  }
+
+  color: $primary-color;
+  min-width: 200px;
+  width: 1200px;
+  padding: 40px;
+  margin: 2% auto;
+
+  .check-in-title {
+    font-size: 90px;
+    font-weight: 700;
+  }
+
+  .check-in-subtitle{
+    font-size: 60px;
+  }
+
+  .check-in-paragraph {
+    font-size: 40px;
+  }
+
+}
+
+
+@media only screen and (max-width: 767px) {
+  #check-in-wrapper {
+    margin: 10% auto;
+    width: 95%;
+
+    .check-in-title {
+     font-size: 10vw;
+    }
+
+    .check-in-subtitle{
+     font-size: 7vw;
+    }
+
+   .check-in-paragraph {
+      font-size: 5vw;
+   }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #check-in-wrapper {
+    width: 95%;
+
+    .form {
+      width: 100%;
+    }
+
+    .check-in-title {
+      font-size: 70px;
+     }
+
+     .check-in-subtitle{
+      font-size: 50px;
+     }
+
+    .check-in-paragraph {
+       font-size: 30px;
+    }
+  }
+}

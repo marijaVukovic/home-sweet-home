@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  client:
+    container_name: home_sweet_home_client
+    build: .
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - ${REACT_APP_PORT}:${REACT_APP_PORT}
+    command: npm run build-and-serve
