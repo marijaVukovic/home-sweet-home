@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #faf7f2;
+  overflow: hidden; }
+  @media only screen and (max-width: 992px) {
+    body {
+      overflow: visible; } }
+
+.card.sign-in-container {
+  margin: 40px auto !important;
+  padding: 40px;
+  width: 40%; }
+  .card.sign-in-container .primary-submit-btn {
+    background-color: #cea962;
+    color: white; }
+  .card.sign-in-container .error-status {
+    color: #d30404; }
+
+#check-in-wrapper {
+  color: #cea962;
+  min-width: 200px;
+  width: 1200px;
+  padding: 40px;
+  margin: 2% auto; }
+  #check-in-wrapper h1, #check-in-wrapper h2, #check-in-wrapper h3 {
+    text-align: center;
+    font-style: italic; }
+  #check-in-wrapper .check-in-title {
+    font-size: 90px;
+    font-weight: 700; }
+  #check-in-wrapper .check-in-subtitle {
+    font-size: 60px; }
+  #check-in-wrapper .check-in-paragraph {
+    font-size: 40px; }
+
+@media only screen and (max-width: 767px) {
+  #check-in-wrapper {
+    margin: 10% auto;
+    width: 95%; }
+    #check-in-wrapper .check-in-title {
+      font-size: 10vw; }
+    #check-in-wrapper .check-in-subtitle {
+      font-size: 7vw; }
+    #check-in-wrapper .check-in-paragraph {
+      font-size: 5vw; } }
+
+@media screen and (min-width: 768px) {
+  #check-in-wrapper {
+    width: 95%; }
+    #check-in-wrapper .form {
+      width: 100%; }
+    #check-in-wrapper .check-in-title {
+      font-size: 70px; }
+    #check-in-wrapper .check-in-subtitle {
+      font-size: 50px; }
+    #check-in-wrapper .check-in-paragraph {
+      font-size: 30px; } }
+
+.check-in-form {
+  margin: 20px auto;
+  width: 80%; }
+  .check-in-form .field {
+    margin-bottom: 20px !important; }
+  .check-in-form .check-in-btn-wrapper {
+    text-align: center; }
+  .check-in-form .primary-submit-btn {
+    background-color: #cea962;
+    color: white; }
+  .check-in-form .error-status {
+    color: #d30404; }
+  @media screen and (max-width: 767px) {
+    .check-in-form .field {
+      min-width: 100%; } }
+
+.dashboard-container {
+  width: 80%;
+  margin: 5% auto; }
+  .dashboard-container .check-out-btn {
+    background-color: #d30404;
+    color: white; }
+  .dashboard-container .error-status {
+    color: #d30404; }
