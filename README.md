@@ -10,7 +10,7 @@ Home Sweet Home is hotel app that needs 3 docker container to run. Database, API
 ## Running
 1. Database ``` npm run db ```
 2. API ``` npm run api ```
-3. Client ``` npm run client ``` alternative until node-sass is resolved is ``` cd client && npm install && npm run start ```
+3. Client ``` npm run client ```
 
 ## Routes
 1. Home: `http://localhost:3000/#/`
