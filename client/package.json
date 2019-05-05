@@ -10,7 +10,7 @@
     "start": "npm run watch-css & react-scripts start",
     "build": "npm run build-css && react-scripts build",
     "serve": "node -r dotenv/config ./scripts/serve.js",
-    "build-and-serve": "npm run build && npm run serve",
+    "build-and-serve": "npm install && npm run build && npm run serve",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint \"**/*.js\"",
