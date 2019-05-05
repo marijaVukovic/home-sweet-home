@@ -11,9 +11,8 @@ export const login = authData => (dispatch) => {
   dispatch(authLoginPending(authData));
   axios.post(`${env.API_URL}/users/authenticate`, authData)
     .then((response) => {
-      console.log({ response })
       axios.defaults.headers.common['x-access-token'] = response.data.data.token;
-      dispatch(authLoginSuccess(response.data));
+      dispatch(authLoginSuccess(response.data.data.user));
     })
     .catch(error => dispatch(authLoginFailure(error.toString())));
 };

@@ -25,7 +25,12 @@ module.exports = {
       ) {
         // eslint-disable-next-line no-underscore-dangle
         const token = jwt.sign({ id: userInfo._id }, req.app.get('secretKey'), { expiresIn: '1h' });
-        res.json({ status: 'success', message: 'user found!!!', data: { user: userInfo, token } });
+        const userInfoWithoutPassword = {};
+        userInfoWithoutPassword._id = userInfo._id;
+        userInfoWithoutPassword.email = userInfo.email;
+        userInfoWithoutPassword.firstName = userInfo.firstName;
+        userInfoWithoutPassword.lastName = userInfo.lastName;
+        res.json({ status: 'success', message: 'user found!!!', data: { user: userInfoWithoutPassword, token } });
       }
       else {
         res.status(401).send('invalid email/password combination');

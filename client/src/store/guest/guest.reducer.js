@@ -61,7 +61,6 @@ export default (state = initialState, action) => {
     return {
       ...state,
       data: [
-        ...state.data,
         ...action.payload.map(guest => ({
           ...guest,
           checkInDate: moment(guest.checkInDate),
