@@ -33,7 +33,7 @@ setTimeout(() => console.log('connecting to database...'), 0);
 // eslint-disable-next-line no-console
 mongoose.connection.on('error', console.error.bind(console, 'MongoDB connection error:'));
 // eslint-disable-next-line no-console
-mongoose.connection.on('connect', console.log.bind(console, 'MongoDB connection error:'));
+mongoose.connection.on('connect', console.log.bind(console, 'MongoDB connection success:'));
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -69,7 +69,7 @@ app.use((err, req, res) => {
 
 // server
 const PORT = process.env.API_PORT || '3030';
-const HOST = process.env.API_HOST || '0.0.0.0';
+const HOST = process.env.API_HOST || 'localhost';
 
 app.listen(PORT, HOST);
 // eslint-disable-next-line no-console

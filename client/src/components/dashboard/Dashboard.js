@@ -7,7 +7,7 @@ import moment from 'moment';
 import { guestActions, guestSelectors } from '../../store';
 
 class Dashboard extends Component {
-  propTypes = {
+  static propTypes = {
     getGuests: PropTypes.func,
     checkOutGuest: PropTypes.func,
     error: PropTypes.string,

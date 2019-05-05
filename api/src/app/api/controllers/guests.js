@@ -24,7 +24,7 @@ module.exports = {
   },
 
   updateById(req, res, next) {
-    guestModel.findByIdAndUpdate(req.params.guestId, { name: req.body.name }, (err, guestInfo) => {
+    guestModel.findByIdAndUpdate(req.params.guestId, req.body, (err, guestInfo) => {
       if (err) next(err);
       else {
         res.json({ status: 'success', message: 'guest updated successfully!!!', data: guestInfo });

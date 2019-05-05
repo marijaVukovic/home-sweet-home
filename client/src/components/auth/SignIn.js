@@ -8,7 +8,7 @@ import { authActions, authSelectors } from '../../store';
 import Routes from '../../lib/routes';
 
 class SignIn extends PureComponent {
-  propTypes = {
+  static propTypes = {
     login: PropTypes.func,
     authUser: PropTypes.object,
     error: PropTypes.string,

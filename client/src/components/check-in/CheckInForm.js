@@ -17,7 +17,7 @@ const initialFormState = {
 };
 
 class CheckInForm extends PureComponent {
-  propTypes = {
+  static propTypes = {
     error: PropTypes.string,
     isCheckInInProgress: PropTypes.bool,
     onSuccess: PropTypes.func,
